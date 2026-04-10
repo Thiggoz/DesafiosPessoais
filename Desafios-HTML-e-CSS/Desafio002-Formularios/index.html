@@ -23,7 +23,7 @@
 
         <p>
             <label for="isen">Senha: </label>
-            <input type="password" name="sen" id="isen" required minlength="8" maxlength="20">
+            <input type="password" name="sen" id="isen" required minlength="8" maxlength="20" autocomplete="current-password">
         </p>
 
         <p>
@@ -36,10 +36,13 @@
             <input type="date" name="data" id="idata" required>
         </p>
 
-        <p>
-            <label for="isex">Gênero: </label>
-            <input type="radio" name="sex" id="isex" value="M">
-        </p>
+        <fieldset>
+            <legend>Gênero</legend>
+            <p>
+                <input type="radio" name="mas" id="imas" value="M"><label for="imas">Masculino</label>
+                <input type="radio" name="fem" id="ifem" value="F"><label for="ifem">Feminino</label>
+            </p>
+        </fieldset>
 
         <p>
             <input type="submit" value="Enviar">
